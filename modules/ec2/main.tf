@@ -26,7 +26,7 @@ resource "aws_instance" "this" {
   tags = merge(
   var.tags,
   {
-    Name = "chayanne sanchez"
+    Name = "chayanne sanchez terraform"
   }
 )
 }
