@@ -1,5 +1,5 @@
 cuenta   = "dev"
-proyecto = "labv2"
+proyecto = "lab"
 
 key_name         = "lab-key"
 private_key_path = "./lab-key.pem"
