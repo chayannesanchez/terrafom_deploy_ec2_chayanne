@@ -26,7 +26,7 @@ jobs:
         run: terraform init -reconfigure
 
       - name: Terraform Plan
-        run: terraform plan
+git push        run: terraform plan
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
