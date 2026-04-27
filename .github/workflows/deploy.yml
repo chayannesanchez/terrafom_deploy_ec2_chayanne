@@ -1,4 +1,4 @@
-name: Destroy
+name: Deploy
 
 on:
   workflow_dispatch:
@@ -8,14 +8,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
+      - uses: hashicorp/setup-terraform@v3
 
       - name: Terraform Init
         run: terraform init
 
-      - name: Terraform Destroy
-        run: terraform destroy -auto-approve
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
