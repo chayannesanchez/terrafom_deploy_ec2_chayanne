@@ -1,5 +1,5 @@
-cuenta   = "dev"
-proyecto = "lab"
+account = "dev"
+project = "lab"
 
 key_name         = "lab-key"
 private_key_path = "./lab-key.pem"
