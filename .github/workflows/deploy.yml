@@ -28,5 +28,5 @@ jobs:
       - name: Terraform Plan
 git push        run: terraform plan
 
-      - name: Terraform Apply
-        run: terraform apply -auto-approve
+      - name: Terraform destroy
+        run: terraform destroy -auto-approve
